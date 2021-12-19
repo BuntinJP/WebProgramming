@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-function App() {
+const containerStyle = {
+  width: "100%",
+  height: "100vh",
+};
+
+const center = {
+  lat: 35.537509,
+  lng: 139.802322,
+};
+const positionJyorikuti = {
+  lat: 35.476607,
+  lng: 139.798191,
+};
+const positionYuigahama = {
+  lat: 35.310011,
+  lng: 139.544386,
+};
+const MyComponent = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LoadScript googleMapsApiKey="AIzaSyDqSf-2YnoG-pK3fhapRfS1SpQ09v9C6rg">
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+        <Marker position={positionJyorikuti} label={"呉爾羅第一上陸地"} />
+        <Marker position={positionYuigahama} label={"呉爾羅第二上陸地"} />
+      </GoogleMap>
+    </LoadScript>
   );
-}
+};
 
-export default App;
+export default MyComponent;
