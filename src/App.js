@@ -28,4 +28,9 @@ const MyComponent = () => {
   );
 };
 
+/* 先生のプログラムから複数の選択ができるプルダウンみたいなやつを持ってくる。
+そしてそれによって<googleMap></googleMap>の中で場合分けし、ピンの発生を制御するのを
+最終提出ファイルとする。！！
+それで楽しよう！！！ */
+
 export default MyComponent;
