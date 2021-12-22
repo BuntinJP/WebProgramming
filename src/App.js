@@ -18,7 +18,8 @@ const positionYuigahama = {
   lat: 35.310011,
   lng: 139.544386,
 };
-const MyComponent = () => {
+
+const MyComponentß = () => {
   return (
     <LoadScript googleMapsApiKey="AIzaSyDqSf-2YnoG-pK3fhapRfS1SpQ09v9C6rg">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
