@@ -7,10 +7,10 @@ import Sign from "./sign";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 ReactDOM.render(<Sign />, document.querySelector("#signature"));
 ReactDOM.render(<Modal />, document.getElementById("#modal"));
