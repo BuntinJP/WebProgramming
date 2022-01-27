@@ -3,7 +3,7 @@ import { React } from "react";
 
 const containerStyle = {
     width: "100%",
-    height: "93vh",
+    height: "50vh",
 };
 
 const center = {
@@ -38,10 +38,5 @@ const Map = () => {
         </LoadScript>
     );
 };
-
-/* 先生のプログラムから複数の選択ができるプルダウンみたいなやつを持ってくる。
-そしてそれによって<googleMap></googleMap>の中で場合分けし、ピンの発生を制御するのを
-最終提出ファイルとする。！！
-それで楽しよう！！！ */
 
 export default Map;
