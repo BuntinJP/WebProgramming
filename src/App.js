@@ -19,12 +19,21 @@ const positionYuigahama = {
     lng: 139.544386,
 };
 
-const MyComponent = () => {
+const Map = () => {
     return (
         <LoadScript googleMapsApiKey="AIzaSyDqSf-2YnoG-pK3fhapRfS1SpQ09v9C6rg">
-            <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-                <Marker position={positionJyorikuti} label={"呉爾羅第一上陸地"} />
-                <Marker position={positionYuigahama} label={"呉爾羅第二上陸地"} />
+            <GoogleMap
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={10}>
+                <Marker
+                    position={positionJyorikuti}
+                    label={"呉爾羅第一上陸地"}
+                />
+                <Marker
+                    position={positionYuigahama}
+                    label={"呉爾羅第二上陸地"}
+                />
             </GoogleMap>
         </LoadScript>
     );
@@ -35,4 +44,4 @@ const MyComponent = () => {
 最終提出ファイルとする。！！
 それで楽しよう！！！ */
 
-export default MyComponent;
+export default Map;
