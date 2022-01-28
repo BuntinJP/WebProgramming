@@ -1,0 +1,9 @@
+.signature {
+    text-align: center;
+}
+
+#modalOpener {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
