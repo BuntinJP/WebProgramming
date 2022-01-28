@@ -1,15 +1,9 @@
-import {
-    GoogleMap,
-    InfoWindow,
-    LoadScript,
-    Marker,
-} from "@react-google-maps/api";
+import { GoogleMap, InfoWindow, LoadScript } from "@react-google-maps/api";
 import React, { useState } from "react";
 import Sign from "./sign";
 import Header from "./Header";
 import "bulma/css/bulma.css";
 import ModalSecond from "./ModalSecond";
-import { makeStyles } from "@mui/material";
 
 const containerStyle = {
     width: "100%",
